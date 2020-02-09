@@ -1,0 +1,55 @@
+$font_color: #ffffff;
+
+.side-chat {
+  width: 300px;
+  float: left;
+  &__header {
+    background-color: #253141;
+    height: 100px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+      &__block {
+        height: 20px;
+        width: 260px;
+        display: flex;
+        justify-content: space-between;
+        line-height: 20px;      
+        &__left {
+          color: $font_color;
+          font-weight: bold;;
+        }
+        &__right {
+          height: 20px;
+          width: 60px;
+          a {
+            float: right;
+            color: $font_color;
+            margin-left: 5px;
+          }
+        }
+      }
+  }
+  
+  &__groups {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    width: 300px;
+    color: $font_color;
+    font-weight: bold;
+    padding: 20px;
+    &__group {
+      color: $font_color;
+      padding-bottom: 40px;
+      &--name {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      &--message {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
