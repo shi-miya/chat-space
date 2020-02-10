@@ -1,0 +1,33 @@
+.main-chat 
+  .main-chat__header
+    .main-chat__header__left
+      .main-chat__header__left--group
+        white-bear
+      .main-chat__header__left--member
+        Member:しろくま,aaa
+    .main-chat__header__right--btn
+      = link_to 'Edit','#', class: "main-chat__header__right--btn"
+  .main-chat__messages
+    .main-chat__messages__message
+      .main-chat__messages__message__info
+        .main-chat__messages__message__info--talker
+          しろくま
+        .main-chat__messages__message__info--created_at
+          2020/02/09(Sun)10:12
+      .main-chat__messages__message--chat
+        おはよ〜
+      .main-chat__messages__message__info
+        .main-chat__messages__message__info--talker
+          G-shiro2
+        .main-chat__messages__message__info--created_at
+          2020/02/09(Sun)11:31
+      .main-chat__messages__message--chat
+        さむいな〜
+  .form
+    %form.new-message
+      .input-box
+        %input{type: "text", placeholder: "type a message",id:"text"}
+        %label{for:"icon",class:"input-box__image"}
+          = icon('far fa-image', class:"")
+          %input{type:"file" ,id:"icon"}
+      %input{type: "submit",value: "Send",class:"form__btn"}
