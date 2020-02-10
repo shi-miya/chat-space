@@ -1,12 +1,13 @@
 .side-chat
   .side-chat__header
     .side-chat__header__block
-      .side-chat__header__block__left しろくま
+      .side-chat__header__block__left 
+        = current_user.name
       .side-chat__header__block__right
-        = link_to '#', class: "side-chat__header__block__right--btn1" do
-          = icon('fas fa-cog', class: "side-chat__header__block__right--btn1")
-        = link_to '#', class: "side-chat__header__block__right--btn2" do
-          = icon('fas fa-edit', class: "side-chat__header__block__right--btn2")
+        = link_to '#', class: "edit-icon-btn" do
+          = icon('fas fa-edit', class: 'icon')
+        = link_to edit_user_path(current_user), class: "cog-icon-btn" do
+          = icon('fas fa-cog', class: 'icon')
   .side-chat__groups 
     .side-chat__groups__group
       .side-chat__groups__group--name
