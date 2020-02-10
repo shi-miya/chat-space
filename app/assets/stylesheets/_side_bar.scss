@@ -1,5 +1,3 @@
-$font_color: #ffffff;
-
 .side-chat {
   width: 300px;
   float: left;
@@ -22,11 +20,10 @@ $font_color: #ffffff;
         }
         &__right {
           height: 20px;
-          width: 60px;
           a {
-            float: right;
             color: $font_color;
-            margin-left: 5px;
+            // margin-left: 5px;
+            text-decoration: none;
           }
         }
       }
