@@ -33,17 +33,20 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     width: 300px;
-    color: $font_color;
     font-weight: bold;
     padding: 20px;
     &__group {
-      color: $font_color;
       padding-bottom: 40px;
-      &--name {
+      a {
+        text-decoration: none;
+      }
+      .group--name {
+        color: $font_color;
         font-size: 15px;
         margin-bottom: 5px;
       }
-      &--message {
+      .group--message {
+        color: $font_color;
         font-size: 11px;
       }
     }
