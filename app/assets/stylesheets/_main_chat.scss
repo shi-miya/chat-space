@@ -57,37 +57,43 @@
           color: #434A54;
           font-size: 14px;
           margin-bottom: 46px;
-        }
+    }
   }
-  .form {
+  &__form {
     padding: 20px 40px;
     height: 90px;
-    background-color: #d2d2d2;
+    background-color: $light_gray;
     width: 100%;
-    & form.new-message {
+    &__new-messages {
       display: flex;
-      & .input-box{
+      height: 100%;
+      width: 100%;
+      .new_message{
+        width: 100%;
+      }
+      &__message-box {
         width: 100%;
         display: flex;
         position: relative;
-      }
-        & input#text {
+      
+        &__input-text {
           width: 100%;
           padding: 0 40px 0 10px;
           height: 50px;
           border-style: none;
         }
-        & label.input-box__image{
+        &__input-image{
           font-size: 1.3rem;
           position: absolute;
-          top: 10px;
-          right: 10px;
+          top: 14px;
+          right: 120px;
           cursor: pointer;
-          & #icon {
+          input {
             display: none;
           }
         }
-      & input.form__btn {
+      }
+      &__form__btn {
         background-color: $btn_color;
         height: 50px;
         width: 100px;
