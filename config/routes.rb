@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root to: "groups#index"
+  root to: "groups#index", defaults: { format: :html }
   resources :products
   resources :users,   only: [:edit, :update]
   resources :groups,  only: [:index, :new, :create, :edit, :update] do
