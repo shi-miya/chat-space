@@ -47,11 +47,7 @@ $(function(){
               ${message.created_at}
             </div>
         </div>
-          <div class="lower-message">
-            <p class="lower-message__content"
-              ${message.image}
-            </p>
-          </div>
+        <img src=${message.image} >
         </div>`
     };
     return html;
