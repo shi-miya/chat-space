@@ -66,9 +66,12 @@ $(function(){
       })
       .done(function(data){
         var html = buildHTML(data);
-        $('.main-chat__messages').append(html);
+        $('.main-chat__messages').append(html);        
         $('.main-chat__messages').animate({ scrollTop: $('.main-chat__messages')[0].scrollHeight});
+        $('.main-chat__form__new-messages__message-box__input-text').val("");
+        $('#hidden').val("");
         $('.main-chat__form__new-messages__form__btn').prop('disabled', false);
+        
       })
       .fail(function() {
         alert("メッセージ送信に失敗しました");
